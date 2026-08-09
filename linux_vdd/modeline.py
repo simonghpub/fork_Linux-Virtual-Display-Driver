@@ -178,7 +178,7 @@ def _build_result(h_disp, v_disp, refresh, clock,
                   h_sync_pol, v_sync_pol) -> dict:
     """Build the result dict and modeline string."""
 
-    name = f"{h_disp}x{v_disp}_{refresh:.2f}"
+    name = f"{h_disp}x{v_disp}"
     clock_rounded = round(clock, 2)
 
     modeline_args = [
